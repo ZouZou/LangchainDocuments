@@ -20,7 +20,7 @@ from langchain.agents.agent_toolkits import (
 
 # Set APIkey for OpenAI Service
 # Can sub this out for other LLM providers
-os.environ['OPENAI_API_KEY'] = 'youropenaiapikeyhere'
+os.environ['OPENAI_API_KEY'] = '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'
 
 # Create instance of OpenAI LLM
 llm = OpenAI(temperature=0.1, verbose=True)
@@ -30,6 +30,7 @@ embeddings = OpenAIEmbeddings()
 loader = PyPDFLoader('annualreport.pdf')
 # Split pages from pdf 
 pages = loader.load_and_split()
+st.write(pages)
 # Load documents into vector database aka ChromaDB
 store = Chroma.from_documents(pages, embeddings, collection_name='annualreport')
 
