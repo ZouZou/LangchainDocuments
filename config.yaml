@@ -1,0 +1,15 @@
+faiss_indexstore:
+  save_path: 'faiss_db/'
+  index_name: 'ims_user_guide'
+
+chroma_indexstore:
+  save_path: 'chroma_db/'
+  index_name: 'ims_user_guide'
+
+embeddings:
+  name: 'all-MiniLM-L6-v2'
+  device: 'cpu'
+
+TextSplitter:
+  chunk_size: 1000
+  chunk_overlap: 200

@@ -161,3 +161,5 @@ cython_debug/
 
 langchaindocsenv/
 docs/
+chroma_db/
+new_document/
