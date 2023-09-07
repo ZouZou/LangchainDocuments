@@ -1,0 +1,22 @@
+chroma_indexstore:
+  save_path: '../chroma_db/'
+  index_name: 'ims_user_guide'
+  search_type: 'similarity'
+  search_distance: 0.9
+  score_threshold: 0.9
+
+embeddings:
+  name: 'all-MiniLM-L6-v2'
+  device: 'cpu'
+
+TextSplitter:
+  chunk_size: 1000
+  chunk_overlap: 200
+
+chains:
+  return_source_documents: True
+  nbr_of_source_documents: 2
+
+OpenAI:
+  temperature: 0.1
+  condensed_question_temperature: 0.1
