@@ -163,3 +163,5 @@ langchaindocsenv/
 docs/
 chroma_db/
 new_document/
+*.eml
+*.txt
